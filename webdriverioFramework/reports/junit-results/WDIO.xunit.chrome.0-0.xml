@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="Test_that_the_button_is_clickable_since_the_Ajax_loader_completes_loading" timestamp="2019-12-03T10:59:16" time="8.336" tests="2" failures="0" errors="1" skipped="1">
+    <properties>
+      <property name="specId" value="f2a09a2083d61ea40c08a3e69e1c3687"/>
+      <property name="suiteName" value="Test that the button is clickable since the Ajax loader completes loading"/>
+      <property name="capabilities" value="chrome"/>
+      <property name="file" value="./tests/ajaxClickTest.js"/>
+    </properties>
+    <testcase classname="chrome.Test_that_the_button_is_clickable_since_the_Ajax_loader_completes_loading" name="Attempt_to_click_the_button_asap" time="0.002">
+      <skipped/>
+    </testcase>
+    <testcase classname="chrome.Test_that_the_button_is_clickable_since_the_Ajax_loader_completes_loading" name="Attempt_to_click_the_button_after_7_seconds" time="8.332">
+      <error message="An element could not be located on the page using the given search parameters."/>
+      <system-out>
+        <![CDATA[
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/d1b50064dababc54d44db1a3d5ca2ef8/url - {"url":"http://www.webdriveruniversity.com/Ajax-Loader/index.html"}
+RESULT: {"state":"success","sessionId":null,"class":"org.openqa.selenium.remote.Response","value":null,"status":0}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/d1b50064dababc54d44db1a3d5ca2ef8/element - {"using":"id","value":"button155"}
+RESULT: {"message":"no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#button155\"}","type":"RuntimeError","seleniumStack":{"type":"NoSuchElement","message":"An element could not be located on the page using the given search parameters.","orgStatusMessage":"no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#button155\"}\n  (Session info: chrome=78.0.3904.108)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'\nSystem info: host: 'admins-MBP-3', ip: 'fe80:0:0:0:cd9:2203:4a4c:8170%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.5', java.version: '1.8.0_191'\nDriver info: driver.version: unknown"}}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/d1b50064dababc54d44db1a3d5ca2ef8/screenshot - {}
+RESULT: null
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/d1b50064dababc54d44db1a3d5ca2ef8/screenshot - {}
+RESULT: null
+COMMAND: DELETE http://127.0.0.1:4444/wd/hub/session/d1b50064dababc54d44db1a3d5ca2ef8 - {}
+RESULT: {"state":"success","sessionId":null,"class":"org.openqa.selenium.remote.Response","value":null,"status":0}
+]]>
+      </system-out>
+      <system-err>
+        <![CDATA[
+Error: An element could not be located on the page using the given search parameters.
+    at click("#button155") - at element("#button155") - click.js:12:17
+]]>
+      </system-err>
+    </testcase>
+  </testsuite>
+</testsuites>

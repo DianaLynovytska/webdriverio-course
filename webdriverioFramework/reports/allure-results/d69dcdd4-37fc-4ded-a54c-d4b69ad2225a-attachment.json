@@ -1,0 +1,9 @@
+{
+    "message": "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#button155\"}",
+    "type": "RuntimeError",
+    "seleniumStack": {
+        "type": "NoSuchElement",
+        "message": "An element could not be located on the page using the given search parameters.",
+        "orgStatusMessage": "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#button155\"}\n  (Session info: chrome=78.0.3904.108)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'\nSystem info: host: 'admins-MBP-3', ip: 'fe80:0:0:0:cd9:2203:4a4c:8170%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.5', java.version: '1.8.0_191'\nDriver info: driver.version: unknown"
+    }
+}
